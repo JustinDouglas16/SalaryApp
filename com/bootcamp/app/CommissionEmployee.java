@@ -1,5 +1,9 @@
 package com.bootcamp.app;
 
+/*
+ * deze class heeft een base salary die samen wordt opgeteld met de aantal sales die gemaakt zijn.
+ */
+
 public class CommissionEmployee extends Employee {
 	
 	private double commissionRate;

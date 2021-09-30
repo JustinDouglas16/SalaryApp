@@ -1,4 +1,8 @@
 package com.bootcamp.app;
+/*
+ * hier is de parentclass als empoloyee aangegeven en vannhieuit zullen alle childclasses hun attributen overerven.
+ * 
+ */
 
 public abstract class Employee {
 
@@ -43,6 +47,7 @@ public abstract class Employee {
 	
 	public abstract double calculateSalary();
 	
+	//FIXME: format specifier proberen op te lossen  
 	@Override
 	public String toString() {
 		

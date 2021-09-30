@@ -1,5 +1,8 @@
 package com.bootcamp.app;
 
+/*
+ * deze class is voor een employee met een fixed salaris.
+ */
 public class SalaryEmployee extends Employee {
 	
 	public double baseSalary;

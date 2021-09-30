@@ -1,5 +1,9 @@
 package com.bootcamp.app;
 
+/*
+ * deze class geeft een employee aan die werkt op basis van aantal uren en daarmee wordt de salaris berekent.
+ */
+
 public class HourlyEmployee extends Employee {
 
 	private double hoursWorked;
