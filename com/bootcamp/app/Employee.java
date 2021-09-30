@@ -62,6 +62,7 @@ public abstract class Employee {
 	 * double ==> System.out.printf("%f");
 	 * 
 	 * [width] ==> %-20s geeft aan hoeveel spaces er moet zijn tussen characters, deze is met een min sign, dus zal er een 20 spaces open blijven aan de linkerkant. 
+	 * [precision] ==> geeft aan hoeveel characters achter de comma te zien komen. om aan te geven hoeveel er moeten komen wordt zo gedaan System.out.printf("%.1f", );  
 	 */
 	// FIXME: format specifier proberen op te lossen
 	@Override
