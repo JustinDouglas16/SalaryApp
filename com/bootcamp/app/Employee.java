@@ -52,11 +52,22 @@ public abstract class Employee {
 	 */
 	public abstract double calculateSalary();
 
+	
+	/*
+	 * a couple datatypes and their format specifiers to use to display them 
+	 * boolean ==> System.out.printf("%b");
+	 * char ==> System.out.printf("%c");
+	 * string ==> System.out.printf("%s");
+	 * int ==> System.out.printf("%d");
+	 * double ==> System.out.printf("%f");
+	 * 
+	 * [width] ==> %-20s geeft aan hoeveel spaces er moet zijn tussen characters, deze is met een min sign, dus zal er een 20 spaces open blijven aan de linkerkant. 
+	 */
 	// FIXME: format specifier proberen op te lossen
 	@Override
 	public String toString() {
 
-		return String.format("%-20s-%s%n", "Employee ID:" + employeeId)
+		return String.format("%-20s-%d%n", "Employee ID:" + employeeId)
 				+ String.format("%-20s %s%n", "Employee Name:" + firstName + " " + lastName);
 
 	}
