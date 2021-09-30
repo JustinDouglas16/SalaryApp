@@ -6,12 +6,13 @@ package com.bootcamp.app;
 
 public abstract class Employee {
 
+	// employee attributes
 	private int employeeId;
 	private String firstName;
 	private String lastName;
-	
+
 	public Employee() {
-		
+
 	}
 
 	public Employee(int employeeId, String firstName, String lastName) {
@@ -33,25 +34,30 @@ public abstract class Employee {
 		return lastName;
 	}
 
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
+	public void setEmployeeId(int id) {
+		this.employeeId = id;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstName(String name) {
+		this.firstName = name;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastName(String name) {
+		this.lastName = name;
 	}
-	
+
+	/*
+	 * fuction to calculate salary of an employee. all the child classes must
+	 * override this function to return a salary
+	 */
 	public abstract double calculateSalary();
-	
-	//FIXME: format specifier proberen op te lossen  
+
+	// FIXME: format specifier proberen op te lossen
 	@Override
 	public String toString() {
-		
-		return String.format("%-20s-%d%n", "Employee ID:" + employeeId) + String.format("%-20s %s%n", "Employee Name:" + firstName + " " + lastName);
-		
+
+		return String.format("%-20s-%d%n", "Employee ID:" + employeeId)
+				+ String.format("%-20s %s%n", "Employee Name:" + firstName + " " + lastName);
+
 	}
 }
